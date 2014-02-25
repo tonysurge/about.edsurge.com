@@ -1,0 +1,25 @@
+---
+layout: post
+title: EdSurge Team
+permalink: /team/index.html
+path: /team/_posts/
+---
+
+{% for page in site.categories.team reversed %}
+<div class="media media-responsive about-row">
+  <div class="pull-left">
+    <img src="/assets/images/team/{{ page.image }}" alt="" class="about-image about-image-person about-image-large">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">
+      {{ page.name }}<span class="text-muted">, {{ page.position }}</span>
+    </h4>
+    {{ page.content }}
+    {% if page.twitter %}
+    <p>
+      <a class="btn btn-default" href="http://twitter.com/intent/user?screen_name={{ page.twitter }}" target="_blank"><i class="fa fa-twitter fa-lg text-twitter"></i> @{{ page.twitter }}</a>
+    </p>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}

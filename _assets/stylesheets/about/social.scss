@@ -1,0 +1,31 @@
+.about-social {
+  color: #ccc;
+  a {
+    color: inherit;
+    padding: 10px 10px;
+    display: inline-block;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.about-social-home {
+  text-align: center;
+}
+
+.about-social-post {
+  display: none;
+}
+
+@include above-sm {
+  .about-social-post {
+    display: block;
+    text-align: right;
+    a {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+}

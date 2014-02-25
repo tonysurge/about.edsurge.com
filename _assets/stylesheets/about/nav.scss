@@ -1,0 +1,30 @@
+.nav-stacked-about > li {
+  & > a {
+    color: #ccc;
+    padding: 10px;
+    &:hover, &.active {
+      background: none;
+      color: #fff;
+    }
+  }
+}
+
+@include below-sm {
+  .nav-stacked-about-post {
+    @include column-count(2);
+    @include column-gap(0px);
+    font-size: 80%;
+    & > li > a {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
+
+@include above-sm {
+  .nav-stacked-about-post > li {
+    & > a {
+      margin-right: -7px;
+    }
+  }
+}

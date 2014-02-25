@@ -1,0 +1,62 @@
+.about-post-logo {
+  width: 231px;
+}
+
+.about-post-logo-wrapper {
+  margin-top: 0;
+}
+
+.about-post-side {
+  text-align: center;
+  padding-bottom: $padding-large-vertical;
+}
+
+.about-post-bg {
+  background-image: url("/assets/images/about-cover-blur.jpg");
+}
+
+.about-post {
+  padding: $padding-large-vertical * 3 0;
+}
+
+.about-row {
+  margin-bottom: $padding-large-vertical * 3;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about-post-content {
+  background-color: rgba(#fff, 0.85);
+  padding: $padding-large-vertical * 1.5 $padding-large-horizontal * 1.5;
+  border-radius: 2px;
+}
+
+.about-supporter-logo {
+  max-width: 300px;
+}
+
+.about-press p {
+  margin-bottom: $padding-large-vertical * 3;
+}
+
+.about-post-heading {
+  margin-top: 0;
+  margin-bottom: $padding-large-vertical * 3;
+}
+
+@include above-sm {
+  .about-post-side {
+    text-align: right;
+  }
+
+  .nav-stacked-about-post > li {
+    & > a {
+    margin-right: -12px;
+    }
+  }
+
+  .about-post-content {
+    padding: $padding-large-vertical * 3 $padding-large-horizontal * 2.5;
+  }
+}

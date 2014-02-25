@@ -1,0 +1,12 @@
+.media-responsive > .pull-left {
+  float: none !important;
+  text-align: center;
+  margin-bottom: $padding-large-vertical;
+}
+
+@include above-sm {
+  .media-responsive > .pull-left {
+    float: left !important;
+    margin-bottom: 0;
+  }
+}

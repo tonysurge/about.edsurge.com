@@ -1,0 +1,14 @@
+$font-size-base: 16px;
+$font-family-sans-serif: "Open Sans", sans-serif;
+$headings-font-weight: 800;
+@import "../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap";
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "about/mixins";
+@import "about/common";
+@import "about/home";
+@import "about/post";
+@import "about/image";
+@import "about/nav";
+@import "about/social";
+@import "about/media";
+@import "about/footer";

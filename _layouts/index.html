@@ -1,0 +1,28 @@
+---
+layout: default
+html_class: "about-home-bg"
+---
+
+<div class="about-home reverse-background">
+  <div class="container-fluid">
+    <div class="col-sm-6 col-sm-offset-3">
+      <img src="/assets/images/bolt.png" alt="EdSurge" class="about-home-bolt" />
+      <h1 class="h4">
+        <img src="/assets/images/about-logo-no-bolt@2x.png" class="about-home-logo" alt="About EdSurge" />
+      </h1>
+      <div class="about-home-tagline">
+        {{ content }}
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <ul class="nav nav-stacked nav-stacked-about nav-stacked-about-home">
+            {% include nav.html %}
+          </ul>
+          <div class="about-social about-social-home">
+            {% include social.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

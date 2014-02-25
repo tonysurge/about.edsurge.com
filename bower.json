@@ -1,0 +1,9 @@
+{
+  "name": "about.edsurge.com",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap-sass": "twbs/bootstrap-sass",
+    "bourbon": "~3.1.8"
+  }
+}

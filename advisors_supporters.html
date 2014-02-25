@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Advisors & Supporters"
+permalink: /advisors_supporters/index.html
+path: /advisors/_posts/
+---
+
+<h2 class="h4">Advisors</h2>
+
+{% for page in site.categories.advisors reversed %}
+<div class="media media-responsive about-row">
+  <div class="pull-left">
+    <img src="/assets/images/advisors/{{ page.image }}" alt="" class="about-image about-image-person about-image-large">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">
+      <a href="{{ page.link }}" target="_blank">{{ page.name }}</a>
+    </h4>
+    {{ page.content }}
+  </div>
+</div>
+{% endfor %}
+
+<h2 class="h4">Our Supporters</h2>
+
+<div class="about-content-two-col">
+  {% for data in site.data.supporters %}
+  <div class="about-row about-row-two-col">
+    <a href="{{ data.url }}" target="_blank"><img src="/assets/images/supporters/{{ data.image }}" class="about-supporter-logo" /></a>
+  </div>
+  {% endfor %}
+</div>
+
+<h2 class="h4">Angel Investors</h2>
+
+<p>{{ site.data.angels | array_to_sentence_string }}.</p>

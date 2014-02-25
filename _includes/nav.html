@@ -1,0 +1,12 @@
+{% for item in site.data.nav %}
+<li>
+  {% capture adjusted_url %}/{{ item.url }}/index.html{% endcapture %}
+  {% if adjusted_url == page.url %}
+    <a href="/{{ item.url }}" class="active">{{ item.title }}</a>
+  {% elsif item.external %}
+    <a href="{{ item.url }}" target="_blank">{{ item.title }} <i class="fa fa-external-link"></i></a>
+  {% else %}
+    <a href="/{{ item.url }}">{{ item.title }}</a>
+  {% endif %}
+</li>
+{% endfor %}

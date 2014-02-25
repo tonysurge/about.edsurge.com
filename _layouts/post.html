@@ -1,9 +1,31 @@
 ---
 layout: default
+html_class: "about-post-bg"
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<div class="about-post">
+  <div class="container-fluid">
+    <div class="col-md-3 reverse-background col-md-offset-1 about-post-side col-sm-4">
+      <h2 class="about-post-logo-wrapper">
+        <a href="/">
+          <img src="/assets/images/about-logo@2x.png" alt="About EdSurge" class="about-post-logo">
+        </a>
+      </h2>
+      <ul class="nav nav-stacked nav-stacked-about nav-stacked-about-post">
+        {% include nav.html %}
+      </ul>
+      <div class="about-social about-social-post">
+        {% include social.html %}
+      </div>
+    </div>
+    <div class="col-md-7 col-sm-8">
+      <div class="about-post-content {{ page.content_class }}">
+        <h1 class="h2 about-post-heading">{{ page.title }}</h1>
+        {{ content }}
+      </div>
+      <div class="about-footer reverse-background">
+        &copy;2014 EdSurge Inc. All rights reserved.
+      </div>
+    </div>
+  </div>
 </div>

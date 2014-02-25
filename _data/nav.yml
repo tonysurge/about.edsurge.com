@@ -1,0 +1,20 @@
+- url: story
+  title: Who We Are
+- url: team
+  title: Meet the Team
+- url: advisors_supporters
+  title: "Advisors & Supporters"
+- url: testimonials
+  title: Testimonials
+- url: press
+  title: EdSurge on Press
+- url: "http://careers.edsurge.com/"
+  title: Jobs at EdSurge
+  external: true
+- url: editorial-guideline
+  title: Editorial Guideline
+- url: ethics-statement
+  title: Ethics Statement
+- url: "http://www.edsurge.com/"
+  title: edsurge.com
+  external: true

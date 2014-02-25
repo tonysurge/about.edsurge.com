@@ -1,0 +1,20 @@
+---
+layout: post
+title: Testimonials
+permalink: /testimonials/index.html
+path: /testimonials/_posts/
+---
+
+{% for page in site.categories.testimonials reversed %}
+<div class="media media-responsive about-row">
+  <div class="pull-left">
+    <img src="/assets/images/testimonials/{{ page.image }}" alt="" class="about-image about-image-person about-image-large">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">
+      {{ page.name }}<span class="text-muted">, {{ page.position }}</span>
+    </h4>
+    {{ page.content }}
+  </div>
+</div>
+{% endfor %}
